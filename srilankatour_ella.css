@@ -1,0 +1,655 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+			box-sizing:border-box;
+			padding:0;
+			margin:0;
+			font-family: 'Poppins', sans-serif;
+		}
+			
+		.navbar{
+			background-color:darkblue;
+			color:white;
+			display:flex;
+			justify-content:space-around;
+			align-items:center;
+			font-size:18px;
+			
+		}
+		
+		.nav-list{
+			list-style-type:none;
+			
+		}
+		
+		.nav-list .list-item{
+			display:inline-block;
+			padding:20px 10px;
+		}
+		
+		.navbar a{
+			color:white;
+			text-decoration:none;
+			padding:15px 5px;
+		}
+		
+		.navbar a:hover{
+			background-color:skyblue;
+			color:gray;
+		}
+		.container-logo{
+			padding:10px;
+		}
+		
+		.menu{
+			display:none;
+		}
+		
+		.menu-line{
+			width:20px;
+			height:3px;
+			background-color:white;
+			margin-bottom:4px;
+		}
+		
+		
+		
+		@media screen and (max-width:950px){
+			.navbar{
+				flex-direction:column;
+				position:relative;
+				
+				
+			}
+			
+			.navbar .container-logo{
+				width:40%;
+			}	
+			
+			.menu{
+				display:block;
+				position:absolute;
+				right:25px;
+				top:60px;
+			}
+			
+			.nav-list{
+				list-style-type:none;
+				width:100%;
+				text-align:center;
+				padding-top:10px;
+				display:none;
+				overflow:scroll;
+				height:150px;
+				
+				
+			}
+			
+			.nav-list .list-item{
+				display:block;
+				border-top:1px solid white;
+			}
+			
+			.navbar a{
+				padding:10px 20px;
+			}
+		
+			
+			.primary-image{
+				margin-top:10px;
+				margin-left:-100px;
+				margin-bottom:10px;
+				
+			}
+			
+			.active{
+				display:block;
+				margin:20px;
+			}
+			
+		
+		}	
+		
+		.banner{
+			width:100%;
+			height:100vh;
+			background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('https://d1ynolcus8dvgv.cloudfront.net/2019/11/MAD1074-900-600.jpg');
+			background-position:center;
+			background-size:cover;
+		
+		}
+		
+		.banner-content{
+			width:100%;
+			position:absolute;
+			top:60%;
+			transform:translateY(-40%);
+			text-align:center;
+			color:white;
+		}
+		
+		.banner-content p{
+			margin:20px auto;
+			font-weight:100;
+			line-height:25px;
+		}
+		.banner-content h1{
+			font-size:70px;
+			margin-top:80px;
+		}
+	
+		.banner-content button{
+			width:200px;
+			padding:15px 0;
+			text-align:center;
+			margin:20px 10px;
+			border-radius:25px;
+			font-weight:bold;
+			border:2px solid #009688;
+			background:transperent;
+			color:white;
+			background-color:#009688;
+		}
+		
+		.banner-content button:hover{
+			background-color:blue;
+		}
+		
+/* this is para css */
+		
+		.home-para h3{
+			background:darkblue;
+			color:white;
+			text-align:center;
+			padding:20px;
+			margin:10px 0px 0px 0px;
+		}
+		
+		.home-para p{
+			font-family:poppins;
+			margin:10px;
+			font-size:14px;
+		}
+		
+	/* This is form css */
+		.contact-form{
+			width:100%;
+		}
+	.contact-form-heading{
+		background:darkblue;
+		color:white;
+		text-align:center;
+		padding:20px;
+		margin:10px 0px 0px 0px;
+	}
+
+	input[type=text],input[type=email],input[type=date],input[type=number],select,textarea{
+		width:75%;
+		margin-left:10px;
+		padding:12px;
+		border:1px solid black;
+		border-radius:5px;
+		resize:vertical;
+	}
+	
+	input[type=text]:focus,input[type=email]:focus,textarea:focus{
+		background:lightblue;
+	}
+	
+	label {
+		padding: 12px 12px 0px 0px;
+		display: inline-block;
+		margin-left:10px;
+	}
+	.contact-form button{
+		width:150px;
+		padding:15px 0;
+		text-align:center;
+		margin:20px 10px;
+		border-radius:10px;
+		font-weight:bold;
+		border:2px solid #009688;
+		background:transperent;
+		color:white;
+		background-color:#009688;
+		}
+		
+	.contact-form button:hover{
+		background-color:blue;
+		}		
+		
+/* This is body-card css */
+		
+		.body-card{
+			display:flex;
+			flex-wrap:wrap;
+			margin:20px;
+		}	
+		
+        .card-image{
+		    width:100%;
+		}
+
+		.card{
+			
+		    width:100%;
+			padding:15px;
+			margin:45px;
+			box-shadow:5px 5px 5px 5px #404042 ;
+			background-color:lightblue;
+		}
+		.card:hover{
+			box-shadow: 0 0 20px 10px #3333ff;
+		}
+		
+		.card-heading{
+			margin:0px 0px 0px 0px;
+			font-weight:bold;
+			font-family:Copperplate;
+			font-size:25px;
+			background-color:#b165eb;
+			padding:30px;
+			text-align:center;
+			color:white;
+			
+		}
+		
+		.card-text{
+			margin:20px;
+			font-size:15px;
+		}
+		
+	/* This is member css */	
+		.member h1{
+			background:#6f6982;
+			padding:10px;
+			color:white;
+			text-align:center;
+			margin-bottom:-10px;
+		}
+		.member-box{
+			display:flex;
+			flex-wrap:wrap;
+			margin:10px;	
+		}
+		
+		.profile{
+			box-size:padding-box;
+			background-color:#c6b6fc;
+			margin:10px;
+			padding:10px;
+			flex:21%;
+			text-align:center;
+			
+		}
+		.profile:hover{
+			box-shadow: 0 0 20px 0px #625c66;
+		}
+	
+		.profile img{
+			width:80%;
+			border-radius:50%;
+			object-fit:cover;
+			border:10px solid #e6dae5;
+		}
+		.profile h6{
+			text-align:center;
+			font-weight:bold;
+			font-size:20px;
+			margin-top:10px;
+			margin-bottom:30px;
+		}
+		.pro-links img{
+			width:32px;
+			border:none;
+		}
+		.pro-links{
+			margin-top:20px;
+		}
+		
+		@media screen and (max-width:500px){
+			.profile{
+				flex:100%;
+				padding:30px;
+			}
+		}
+			
+		@media (min-width:500px) and (max-width:1200px){
+			.profile{
+				flex: 42%;
+			}
+		}	
+		
+		/* This is footer css */
+
+       .footer{
+			font-family:poppins;
+			margin:0;
+			display:grid;
+			font-size:14px;
+		}
+
+		.footer{
+			display:flex;
+			flex-flow:row wrap;
+			padding:50px;
+			color:white;
+			background-color:#25242a;				
+		}
+		
+		.footer input[type=submit]{
+			box-sizing:border-box;
+			background-color:orange;
+			color:white;
+			padding:15px 25px;
+			margin:10px 10px;
+			border:none;
+			border-radius:5px;
+			cursor:pointer;
+			box-shadow: 0 9px #999;
+		}
+		
+		.footer input[type=submit]:hover {
+			background-color:#fcca32;
+		}
+		.footer > *{
+			flex:1 100%;		
+		}
+		
+		.left-area{
+			margin-right:2em;
+		}
+		
+		.footer-bootom img{
+			width:10%;
+		}
+		
+		h2{
+			font-size:17px;
+			font-weight:600;
+			text-transform:uppercase;
+			color:darkorange;
+			letter-spacing:3px;
+		}
+		
+		.footer ul{
+			list-style:none;
+			padding-left:0;		
+		}
+
+        .footer li{
+			line-height:2em;			
+		}
+		
+		.footer a{
+			text-decoration:none;
+		}
+		
+		.footer a:hover {
+			color: hotpink;
+		}
+		
+		.footer a:active{
+			color:skyblue;
+		}
+		
+		.right-area{
+			display:flex;
+			flex-flow:row wrap;		
+		}
+		
+		.right-area > *{
+			flex:1 50%;
+			margin-right:1em;
+		}
+		
+		.box a{
+			color:#999;
+		}
+		
+		.footer-bottom{
+			text-align:center;
+			color:#999;
+			padding-top:50px;
+		}
+		
+		.left-area p{
+			padding-right:20%;
+			color:#999;
+		}
+		
+		.socials{
+			margin-top:2.2em;
+		}
+		
+		.socials a{
+			background-color:black;
+			width:40px;
+			height:40px;
+			display:inline-block;
+			margin-right:10px;
+			margin-bottom:10px;
+		}
+		
+		.socials a img{
+			width:100%;
+				
+		}
+		
+		.button{
+			border:none;
+			background:darkorange;
+			color:white;
+			padding:10px 30px;		
+		}
+		
+		.search-box input{
+			height:36px;		
+		}
+		
+		 #review {
+			background:liner-gradient(orange);
+		}
+		
+		
+		@media screen and (min-width:600px){
+			.right-area > *{
+				flex:1;
+			}
+			.left-area{
+				flex:1 0px;
+			}
+			.right-area{
+				flex:2 0px;
+			}	
+		}
+		
+		@media screen and (max-width:600px){
+			.footer{
+				padding:15px;
+			}
+		}
+	
+	
+	/* grid view */
+	
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+	
+	
+	[class*="col-"] {
+		float: left;
+		padding: 15px;
+	}
+	
+	@media only screen and (max-width:350px){
+			[class*="col-"] {
+				width:100%;
+			}
+			
+			.banner-content h1{
+				font-size:22px;
+				margin-top:100px;
+			}
+			.banner-content p{
+				font-size:14px;
+			}
+			.banner-content button{
+				width:100px;
+				padding:15px 0;
+				text-align:center;
+				margin:10px 10px;
+			}
+			.banner-content{
+				top:75%;
+			}
+			.container-logo{
+				margin-left:30px;
+			}
+			.card{
+				overflow:scroll;
+				height:350px;
+				margin:20px 0px;
+				
+			}
+			.card-heading{
+				font-size:15px;
+			}
+		}
+	
+	@media only screen and (min-width:350px)and (max-width:450px){
+			[class*="col-"] {
+				width:100%;
+			}
+			
+			.banner-content h1{
+				font-size:30px;
+				margin-top:60px;
+			}
+			.banner-content p{
+				font-size:14px;
+			}
+			.banner-content{
+				top:75%;
+			}
+			.card{
+				overflow:scroll;
+				height:400px;
+				margin:20px 0px;
+				
+			}
+			.card-heading{
+				font-size:18px;
+			}
+		}
+			
+		@media only screen and (min-width:450px)and (max-width:702px){
+			[class*="col-"] {
+				width:100%;
+			}
+			
+			.banner-content h1{
+				font-size:50px;
+				margin-top:60px;
+			}
+			.banner-content{
+				top:75%;
+			}
+		}
+			
+		@media only screen and (min-width:702px)and (max-width:800px){
+			.card {
+				margin:25px 20px 20px 10px;
+			}
+			.banner-content{
+				top:75%;
+			}
+	
+		}
+		
+		@media only screen and (min-width:1020px)and (max-width:1190px){
+			.card-image{
+				width:370px;
+				height:300px;
+			}
+
+			.card{
+				width:400px;
+				padding:15px;
+				margin:20px 30px;
+			}
+		}
+			
+		@media only screen and (min-width:1190px)and (max-width:1320px){
+			.card-image{
+				width:460px;
+				height:330px;
+			}
+
+			.card{
+				width:490px;
+				padding:15px;
+				margin:20px 30px;
+			}
+			
+			.home-para p{
+				font-size:16px;
+			}
+			.body-card{
+				margin-top:-30px;
+			}
+		}
+		
+			
+		
+		@media only screen and (min-width:1320px)and (max-width:1480px){
+			.card-image{
+				width:520px;
+				height:370px;
+			}
+
+			.card{
+				width:550px;
+				padding:15px;
+				margin:20px 30px;
+			}
+			.home-para p{
+				font-size:17px;
+			}
+			.body-card{
+				margin-top:-30px;
+			}
+			
+		}
+	
+		@media only screen and (min-width:1480px){
+			.home-para p{
+				font-size:18px;
+			}
+			.body-card{
+				margin-top:-30px;
+			}
+			
+			.card-image{
+				width:570px;
+				height:400px;
+			}
+
+			.card{
+				width:600px;
+				padding:15px;
+				margin:20px 30px;
+			}	
+		}
+		
+	
